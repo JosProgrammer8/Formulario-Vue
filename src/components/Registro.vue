@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <h1 class="mb-4">Formulario</h1>
+    <h1 class="mb-4">Registro</h1>
     <form @submit.prevent="handleSubmit" novalidate>
       <div class="mb-3">
-        <label for="name-all" class="form-label">Nombre Completo</label>
-        <input type="text" id="name-all" class="form-control" v-model="formData.name" placeholder="Nombre Completo" required pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios">
+        <label for="name-all" class="form-label">Nombre de Usuario</label>
+        <input type="text" id="name-all" class="form-control" v-model="formData.name" placeholder="Nombre de Usuario" required pattern="[a-zA-Z\s]+" title="Solo se permiten letras y espacios">
       </div>
 
       <div class="mb-3">
@@ -13,8 +13,8 @@
       </div>
 
       <div class="mb-3">
-        <label for="Cellphone" class="form-label">Número de Teléfono</label>
-        <input type="tel" id="Cellphone" class="form-control" v-model="formData.phone" placeholder="Número de Teléfono" required pattern="[0-9]{10}" title="Debe contener 10 dígitos">
+        <label for="Cellphone" class="form-label">Teléfono</label>
+        <input type="tel" id="Cellphone" class="form-control" v-model="formData.phone" placeholder="Teléfono" required pattern="[0-9]{10}" title="Debe contener 10 dígitos">
       </div>
 
       <div class="mb-3">
